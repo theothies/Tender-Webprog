@@ -1,0 +1,8 @@
+Wir müssen erstmal klären was wir auf unsrer WebApp umsetzen:
+
+ich denke wir brauchen folgende Ansichten:
+  - Login
+  - Übersicht Rinderprofile mit Filter und Sortierfunktion
+  - Warenkorb
+  - Einzelprofil Rind
+  - Bestellprozess

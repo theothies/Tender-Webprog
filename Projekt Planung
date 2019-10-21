@@ -1,7 +1,7 @@
-Wir müssen erstmal klären was wir auf unsrer WebApp umsetzen:
+WebApp Projektplan:
 -------------------------------------
 Wir brauchen folgende Ansichten:
-  - Login
+  - Login theo: würd ich gern machen
   - Übersicht Rinderprofile mit Filter und Sortierfunktion
   - Warenkorb
   - Einzelprofil Rind

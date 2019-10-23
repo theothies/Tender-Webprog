@@ -1,11 +1,9 @@
 WebApp Projektplan:
 -------------------------------------
 Wir brauchen folgende Ansichten:
-  - Login                                                     ==> THEO: würd ich gern machen
-  - Übersicht Rinderprofile mit Filter und Sortierfunktion    ==>
+  - Übersicht Rinderprofile mit Filter und Sortierfunktion    ==> THEO: würd ich gern machen
   - Warenkorb                                                 ==> Robin: War nix anderes mehr frei :3
   - Einzelprofil Rind                                         ==> Enes: hier seh' ich mich.
-  - Bestellprozess                                            ==>
 -------------------------------------
 Es ist sinnvoll, dass jeder eine Sicht bearbeitet,
 da jeder die folgenden

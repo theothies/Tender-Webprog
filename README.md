@@ -8,4 +8,3 @@ will auf gute alte "Social Media Manier" kennenlernen kann.
 #Tender - Nice to meat you!
 ----------------
 Github Repository: https://github.com/theothies/Tender-Webprog
-Mockups der einzelnen Seiten: https://balsamiq.cloud/s3q5mid/pjyopmj

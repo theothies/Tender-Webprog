@@ -1,4 +1,10 @@
 html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
   background-image: url(Steak.jpg);
 
   height: 100%;
@@ -6,4 +12,5 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: sans-serif;
 }

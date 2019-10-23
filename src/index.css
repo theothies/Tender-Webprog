@@ -1,11 +1,9 @@
 html{
-  background: url(Steak.jpg);
-  background-size: cover;
-  background-position: center;
-}
+  background-image: url(Steak.jpg);
 
-body{
-  margin: 0;
-  padding: 0;
-  font-familiy: sans-serif;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

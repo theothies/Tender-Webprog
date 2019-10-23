@@ -9,3 +9,5 @@ will auf gute alte "Social Media Manier" kennenlernen kann.
 ----------------
 Github Repository: https://github.com/theothies/Tender-Webprog  
 Mockups der einzelnen Seiten: https://balsamiq.cloud/s3q5mid/pjyopmj
+Firebase als DB: https://firebase.google.com/
+React als FrontEnd: https://reactjs.org/

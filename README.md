@@ -7,7 +7,8 @@ will auf gute alte "Social Media Manier" kennenlernen kann.
 
 
 ## Werkzeuge
-Atom
+Atom https://atom.io  
+Visual Code Studio https://code.visualstudio.com  
 Github Repository: https://github.com/theothies/Tender-Webprog  
 Mockups der einzelnen Seiten: https://balsamiq.cloud/s3q5mid/pjyopmj  
 Firebase als DB: https://firebase.google.com/  

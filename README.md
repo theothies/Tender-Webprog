@@ -1,12 +1,11 @@
-Beispiel Single Page App "Tender"
-===============================
+# Tender
+## Was ist Tender?
 Projekt zur Vorlesung Webporgrammierung an der DHBW Karlsruhe
-----------------
 Tender ist eine Single Page App, auf der man das Rind, dessen Fleisch man kaufen
 will auf gute alte "Social Media Manier" kennenlernen kann.
-
 #TENDER - Nice to meat you!
-----------------
+
+## Anhang
 Github Repository: https://github.com/theothies/Tender-Webprog  
 Mockups der einzelnen Seiten: https://balsamiq.cloud/s3q5mid/pjyopmj  
 Firebase als DB: https://firebase.google.com/  

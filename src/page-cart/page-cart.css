@@ -1,10 +1,11 @@
 /**
- * Stylesheet zur Klasse PageDetail: Detailseite der App
+ * Stylesheet zur Klasse PageCart: Warenkorbseite der App
  */
 
 .page-heading > div {
     order: 1;
     flex: 1;
+    text-align: center;
 }
 .page-heading > img {
     box-sizing: border-box;
@@ -18,17 +19,9 @@
     order: 2;
 }
 
-.boat-info {
-    font-size: 90%;
-}
-
-.boat-info .label {
-    color: darkgrey;
-    display: inline-block;
-}
-
-.boat-info .value {
-    display: inline-block;
+thead, th {
+    border: 1px solid black;
+    text-align: right;
 }
 
 @media (min-width: 50em) {

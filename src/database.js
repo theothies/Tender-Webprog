@@ -17,7 +17,7 @@ class Database {
      * Vgl. https://firebase.google.com/docs/firestore/quickstart
      */
     constructor() {
-        
+
         firebase.initializeApp({
             apiKey: "AIzaSyD0P-LxU0nvFuo8oh8GIyi4eDorUwr6YCE",
             authDomain: "tender-6183d.firebaseapp.com",

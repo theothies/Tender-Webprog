@@ -15,6 +15,7 @@
         <!-- Klassen für die einzelnen App-Seiten -->
         <script src="page-overview/page-overview.js"></script>
         <script src="page-detail/page-detail.js"></script>
+        <script src="page-cart/page-cart.js"></script>
         <script src="page-not-found/page-not-found.js"></script>
 
         <!-- Fontello Icon Font (generiert auf fontello.com) -->
@@ -31,11 +32,10 @@
                 let pages = [{
                     url: "^/$",
                     klass: PageOverview,
-                },
-                {
+                },{
                     url: "^/Cart/(.*)$",
                     klass: PageCart,
-                }
+                },
                 {
                     url: "^/Detail/(.*)$",
                     klass: PageDetail,
@@ -79,7 +79,7 @@
                 <!-- Übergreifendes App-Menü -->
                 <ul class="menu-right small-screen-hidden">
                     <li>
-                        <a href="#/messages">
+                        <a href="#/Cart/(.*)$">
                             <i class="icon-chat-empty"></i>
                             <span class="small-screen-only">Benachrichtigungen</span>
                         </a>

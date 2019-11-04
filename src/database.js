@@ -19,7 +19,7 @@ class Database {
     constructor() {
 
         firebase.initializeApp({
-            apiKey: "AIzaSyD0P-LxU0nvFuo8oh8GIyi4eDorUwr6YCE",
+            apiKey: "xxx",
             authDomain: "tender-6183d.firebaseapp.com",
             databaseURL: "https://tender-6183d.firebaseio.com",
             projectId: "tender-6183d",

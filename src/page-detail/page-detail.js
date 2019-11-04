@@ -10,7 +10,7 @@ class PageDetail {
      */
     constructor(app){
         this._app = app;
-        this._recordId = -1;
+        this._rindId = -1;
         this._data = null;
     }
 
@@ -20,7 +20,7 @@ class PageDetail {
     async show(matches){
         //URL-Parameter auswerten
         this._recordId = matches[1];
-        this._data = this._app.database.getRecordById(this._recordId);
+        this._data = this._app.database.selectRindById(hAiYtXBckkalpZUQBwOr);
 
         //Anzuzeigenden Seiteninhalt nachladen
         let html = await fetch("page-detail/page-detail.html");
@@ -52,14 +52,15 @@ class PageDetail {
     _processTemplate(html) {
         //Platzhalter mit gelesenen Daten ersetzen
         html = html.replace(/{IMG}/g, this._data.img);
-        html = html.replace(/{NAME}g/, this._data.name);
-        html = html.replace(/{BAUERNHOF}/g, this._data.bauernhof);
-        html = html.replace(/{GEWICHT}/g, this._app.weight);
-        html = html.replace(/{RACE}/g, this._app.race);
-        html = html.replace(/{DATE}/g, this._app.date);
-        html = html.replace(/{AGE}/g, this._app.date);
-        html = html.replace(/{DIET}/g, this._app.diet);
-        html = html.replace(/{QUALITY}/g, this._app.quality);
+        html = html.replace(/{NAME}/g, this._data.name);
+        html = html.replace(/{BAUERNHOF}/g, this._data.hof);
+        html = html.replace(/{GEWICHT}/g, this._data.gewicht);
+        html = html.replace(/{RACE}/g, this._data.rasse);
+        html = html.replace(/{DATE}/g, this._data.date);
+        html = html.replace(/{AGE}/g, this._data.alter);
+        html = html.replace(/{DIET}/g, this._data.diet);
+        html = html.replace(/{QUALITY}/g, this._data.quality);
+        html = html.replace(/{GESCHLECHT}/g, this._data.geschlecht);
 
         //HTML-Template in DOM-Objekte umwandeln, um mit JS DOM-Methoden
         // weiter zu arbeiten.

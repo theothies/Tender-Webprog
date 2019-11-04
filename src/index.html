@@ -31,7 +31,12 @@
                 let pages = [{
                     url: "^/$",
                     klass: PageOverview,
-                },{
+                },
+                {
+                    url: "^/Cart/(.*)$",
+                    klass: PageCart,
+                }
+                {
                     url: "^/Detail/(.*)$",
                     klass: PageDetail,
                 },{

@@ -1,9 +1,9 @@
 "use strict";
 
 /**
- * Klasse PageDetail: Stellt die Detailseite der App zur Verfügung
+ * Klasse PageCart: Stellt die Detailseite der App zur Verfügung
  */
-class PageDetail {
+class PageCart {
     /**
      * Konstruktor
      * @param {App} app Zentrale Instanz der App-Klasse
@@ -23,21 +23,21 @@ class PageDetail {
         this._data = this._app.database.getRecordById(this._recordId);
 
         // Anzuzeigenden Seiteninhalt nachladen
-        let html = await fetch("page-detail/page-detail.html");
-        let css = await fetch("page-detail/page-detail.css");
+        let html = await fetch("page-cart/page-cart.html");
+        let css = await fetch("page-cart/page-cart.css");
 
         if (html.ok && css.ok) {
             html = await html.text();
             css = await css.text();
         } else {
-            console.error("Fehler beim Laden des HTML/CSS-Inhalts");
+            console.error("Fehler beim Laden des Cart HTML/CSS-Inhalts");
             return;
         }
 
         // Seite zur Anzeige bringen
         let pageDom = this._processTemplate(html);
-
-        this._app.setPageTitle(`Segelschiff ${this._data.name}`, {isSubPage: true});
+        console.log(css);
+        this._app.setPageTitle(`Warenkorb ${this._data.name}`, {isSubPage: true});
         this._app.setPageCss(css);
         this._app.setPageHeader(pageDom.querySelector("header"));
         this._app.setPageContent(pageDom.querySelector("main"));

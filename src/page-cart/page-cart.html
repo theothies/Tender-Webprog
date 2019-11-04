@@ -2,35 +2,60 @@
     <div class="page-heading">
         <img src="{IMG}" alt="" />
         <div>
-            <h1>{NAME}</h1>
+            <h1>Warenkorb</h1>
 
-            <div class="boat-info">
-                <div class="field">
-                    <div class="label">
-                        Typ:
-                    </div>
-                    <div class="value">
-                        {TYP}
-                    </div>
-                </div>
-
-                <div class="field">
-                    <div class="label">
-                        Stapellauf:
-                    </div>
-                    <div class="value">
-                        {STAPELLAUF}
-                    </div>
-                </div>
-
-                <div class="field">
-                    <div class="label">
-                        Verbleib:
-                    </div>
-                    <div class="value">
-                        {VERBLEIB}
-                    </div>
-                </div>
+            <div class="cart-table">
+                <table summary="Alle Fleischstücke im Warenkorb">
+                    <caption>Fleischstücke in deinem Warenkorb</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Rindes</th>
+                            <th scope="col">Herkunft</th>
+                            <th scope="col">Geschlecht</th>
+                            <th scope="col">Fleischstück</th>
+                            <th scope="col">Menge (in Gramm)</th>
+                            <th scope="col">Preis</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <td colspan="5">Gesamtsumme:</td>
+                        <td>GesPreis</td>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Gisela</td>
+                            <td>Spanien</td>
+                            <td>Weiblich</td>
+                            <td>Nackensteak</td>
+                            <td>325</td>
+                            <td>34,95 €</td>
+                        </tr>
+                        <tr>
+                            <td>Albrecht</td>
+                            <td>Österreich</td>
+                            <td>Männlich</td>
+                            <td>Rinderhoden</td>
+                            <td>210</td>
+                            <td>74,45 €</td>
+                        </tr>
+                        <tr>
+                            <td>Katja</td>
+                            <td>Deutschland</td>
+                            <td>Weiblich</td>
+                            <td>Filet</td>
+                            <td>500</td>
+                            <td>105,95 €</td>
+                        </tr>
+                        <tr>
+                            <td>Harun</td>
+                            <td>Bosnien</td>
+                            <td>Männlich</td>
+                            <td>Zunge</td>
+                            <td>320</td>
+                            <td>84,95 €</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

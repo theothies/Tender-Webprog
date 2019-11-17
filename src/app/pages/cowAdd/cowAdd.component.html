@@ -1,0 +1,54 @@
+<div id="content">
+
+    <mat-card>
+        <h1>Füge dein Rind hinzu!</h1>
+    </mat-card>
+
+    <mat-card>
+        <form class="form" (ngSubmit)="onSubmit(c)" #c="ngForm">
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Geben sie bitte den Namen der Kuh ein" id="name" name="name" ngModel required>
+            </mat-form-field>
+        
+            <mat-form-field class="full-width">
+                <textarea matInput placeholder="Geben sie den Hof an, an dem das Rind gezüchtet wurde" id="hof" name="hof" ngModel required></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Geben sie das Alter des Rindes an" id="age" name="age" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Wie viel wiegt das Rind" id="weight" name="Weight" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Ab welchem Datum ist das Rind verfügbar" id="date" name="date" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Welche Diät/Essgewohnheiten hat das Rind" id="diet" name="diet" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Geben sie die Rasse der Kuh an" id="race" name="race" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Geben sie einen Link zu einer Bildatei an" id="imageUrl" name="imageUrl" ngModel required>
+            </mat-form-field>
+
+            <p>
+                Welches Geschlecht hat das Rind?
+                <br />
+                <mat-radio-group class="full-width" id="sex" name="sex" ngModel required>
+                    <mat-radio-button value="M">Männlich</mat-radio-button>
+                    <mat-radio-button value="W">Weiblich</mat-radio-button>
+                </mat-radio-group>
+            </p>
+            <button mat-raised-button type="submit" [diabled]="c.invalid">Submit</button>
+        </form>
+    </mat-card>
+
+</div>

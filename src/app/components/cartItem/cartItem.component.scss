@@ -10,3 +10,29 @@ caption{
 #totalOutput{
     text-align: left;
 }
+
+td, th{
+    padding: 8px;
+    border: 1px #ddd;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FF5864;
+    color: white;
+}
+
+#pl_button, #mi_button{
+    padding-left: 16px;
+    padding-right: 16px;
+}

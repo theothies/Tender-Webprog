@@ -24,14 +24,17 @@ export class CowService {
       });
     }
 
+    // Für die Card/Carousel Ansicht, damit alle Rinderprofile übergeben werden zum Anzeigen auf der Seite
     public getAllCows(): Observable<Cow[]>{
         return this.cows;
     };
 
+    // Generiert einen Link für die Detailansicht
     public generateLink(id: string): string{
         return '/detail/$(id)';
     }
 
+    // Nimmt Parameter aus der cowAdd.component und erstellt einen Datenbankeintrag
     cowFormSend(age, diet, sex, date, weight, hof, name, quality, race, imageUrl : any): void {
         this.db.collection("cows").add({
             age: age,

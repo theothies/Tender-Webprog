@@ -24,10 +24,11 @@ export class CowAddComponent {
         const name = form.value.name;
         const quality = form.value.quality;
         const race = form.value.race;
+        const price = form.value.price;
         const imageUrl = form.value.imageUrl
 
         //schickt alle herausgezogenen Parameter an CowService
-        return this.CowService.cowFormSend(age, diet, sex, date, weight, hof, name , quality, race, imageUrl);
+        return this.CowService.cowFormSend(age, diet, sex, date, weight, hof, name , quality, race, price, imageUrl);
 
     }
 }

@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { Observable } from 'rxjs';
 import { Cow } from '../models';
 import 'rxjs/add/operator/map';
+import { PrefixSource } from 'webpack-sources';
 
 @Injectable({
     providedIn: 'root'
@@ -48,7 +49,7 @@ export class CowService {
       }
 
     // Nimmt Parameter aus der cowAdd.component und erstellt einen Datenbankeintrag
-    cowFormSend(age, diet, sex, date, weight, hof, name, quality, race, imageUrl : any): void {
+    cowFormSend(age, diet, sex, date, weight, hof, name, quality, race, price, imageUrl : any): void {
         this.db.collection("cows").add({
             age: age,
             diet: diet,
@@ -59,6 +60,7 @@ export class CowService {
             name: name,
             quality: quality,
             race: race,
+            price: price,
             imageUrl: imageUrl
         })    
         .then(function(Cow){

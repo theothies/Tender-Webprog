@@ -1,0 +1,9 @@
+<h1>Warenkorb</h1>
+
+<div *ngIf="cartItemList.length > 0">
+    <app-cart [cartItemList]="cartItemList"></app-cart>
+</div>
+
+<div *ngIf="cartItemList.length == 0">
+    <p  class="no-items">Aktuell sind keine Produkte in deinem Warenkorb!</p>
+</div>

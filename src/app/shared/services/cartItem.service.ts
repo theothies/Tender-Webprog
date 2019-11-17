@@ -62,7 +62,7 @@ export class CartItemService {
     }
 
     //Methode, um die Gesamtsumme zu berechnen
-    calculatePriceSum(): String{
+    calculatePriceSum(): string{
         var total = 0;
         this.cartItems.forEach(cartItem => {
             total = total + (cartItem.price * cartItem.amount);

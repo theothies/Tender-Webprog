@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Cow } from '@shared/';
+import { Cow } from '@shared'
 
 
 @Component({

@@ -13,13 +13,11 @@ Enthalten sind:
 See also: [AngularMaterialGo](https://github.com/jeroenouw/AngularMaterialGo
 
 ## Quick Start
-```
 First clone this repo: git clone https://github.com/theothies/Tender-Webprog. For Windows machines first install node-gyp Change directory to this project
 Run npm install to install all the dependencies.
 Run npm start to run this project. This will run with the AoT Compiler.
 Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 Run npm reset if you want to re-install everything.
-```
 
 ## Developer
 * [robhringer](https://github.com/robhringer) - Robin Böhringer

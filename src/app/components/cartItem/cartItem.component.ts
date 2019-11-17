@@ -29,4 +29,9 @@ export class CartItemComponent  {
     console.log("function called");
     this.cartItemService.deleteFromCart(position);
     }
+
+    public incrementAmount(position: number){
+    console.log("amount + function called");
+    this.cartItemService.incrementAmountOfCartItem(position);
+    }
 }

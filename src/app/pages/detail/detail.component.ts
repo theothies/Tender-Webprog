@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Cow } from '@shared/';
+
 
 @Component({
     selector: 'app-detail',
@@ -6,6 +9,21 @@ import { Component } from '@angular/core';
     styleUrls: ['./detail.component.scss']
 })
 
-export class DetailComponent {
-    
+export class DetailComponent implements OnInit{
+    activatedRoute: ActivatedRoute;
+    cow: Cow;
+    id: string;
+    serviceSub: any;
+
+    constructor(private route: ActivatedRoute) { 
+        
+    }
+
+    ngOnInit(): void{
+
+    }
+
+    ngOnDestroy(): void{
+
+    }
 }

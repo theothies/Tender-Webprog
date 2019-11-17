@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import { Cow, Carousel } from '../../shared/models';
-import { CowService } from '../../shared/services';
+import { Carousel } from '../../shared/models/carousel.model';
+import { Cow } from '../../shared/models/cow.model'
+import { CowService } from '../../shared/services/cow.service';
 import { Observable } from 'rxjs';
 
 @Component({

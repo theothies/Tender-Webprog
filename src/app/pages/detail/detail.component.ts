@@ -34,7 +34,7 @@ export class DetailComponent implements OnInit {
         const gewicht = form.value.gewicht;
         const amount = form.value.amount;
         const fleshPiece = form.value.fleshPiece;
-        this.cartItemService.addToCart(this.cow,gewicht,fleshPiece,250,amount);
+        this.cartItemService.addToCart(this.cow,gewicht,fleshPiece,(this.cow.price*gewicht/100),amount);
        }
 
     ngOnDestroy(){

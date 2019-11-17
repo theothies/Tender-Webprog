@@ -10,6 +10,7 @@
         <h5>Gewicht verfügbar: {{cow.weight}} kg</h5>
         <h5>Geschlecht: {{cow.sex}}</h5>
         <h5>Diät: {{cow.diet}}</h5>
+        <h5>Preis pro Gramm: {{cow.price}}</h5>
     </div>
     <div gdArea="content">
         <form class="form" (ngSubmit)="onSubmit(c)" #c="ngForm">
@@ -19,7 +20,18 @@
               </mat-form-field></td>
               <td><mat-form-field class="full-width">
                 <input matInput placeholder="Menge" id="amount" name="amount" ngModel required>
-              </mat-form-field></td></tr></table>
+              </mat-form-field></td>
+            </tr>
+            <tr>
+                <mat-radio-group class="full-width" id="fleshPiece" name="fleshPiece" ngModel required>
+                    <mat-radio-button value="Hüfte">Hüfte</mat-radio-button>
+                    <mat-radio-button value="Rücken">Rücken</mat-radio-button>
+                    <mat-radio-button value="Nacken">Nacken</mat-radio-button>
+                    <mat-radio-button value="Schulter">Schulter</mat-radio-button>
+                </mat-radio-group>
+            </tr>
+            </table>
+
               <button mat-raised-button type="submit" [disabled]="c.invalid">Zum Warenkorb hinzufügen</button>
           </form>
     </div>

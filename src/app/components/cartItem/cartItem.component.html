@@ -20,7 +20,7 @@
                     </thead>
                     <tfoot>
                         <td colspan="8">Gesamtsumme:</td>
-
+                        <td id="totalOutput" style="text-align: left;" ></td>
                     </tfoot>
                     <tbody>
                         <tr *ngFor="let cartItem of cartItemList">
@@ -30,7 +30,7 @@
                             <td>{{cartItem.sex}}</td>
                             <td>{{cartItem.fleshPiece}}</td>
                             <td>{{cartItem.weight}}</td>
-                            <td>{{cartItem.amount}}</td>
+                            <td><button (click)="incrementAmount(cartItem.id)" mat-button id="pl_button"><mat-icon>add</mat-icon></button>{{cartItem.amount}}<button (click)="decrementAmount(cartItem.id)" mat-button id="mi_button"><mat-icon>remove</mat-icon></button></td>
                             <td>{{cartItem.price}}</td>
                             <td><button (click)="deleteItem(cartItem.id)" mat-button><mat-icon>delete</mat-icon></button></td>
                         </tr>

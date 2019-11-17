@@ -1,7 +1,5 @@
 import { Component, Input, OnInit, Injector } from '@angular/core';
-import { CartItem } from '../../shared/models';
-import { CartItemService } from '../../shared/services';
-import { Content } from '@angular/compiler/src/render3/r3_ast';
+import { CartItem, CartItemService } from '@shared';
 
 @Component({
   selector: 'app-cart',
@@ -20,7 +18,7 @@ export class CartItemComponent  {
 
     ngOnInit(){
       this.cartItemService = this.injector.get(CartItemService);
-
+      this.getTotal();
     }
 
     //cartItemList von der cart-page übergeben
@@ -47,6 +45,8 @@ export class CartItemComponent  {
     //Methode, um die Gesamtsumme zu erhalten
     public getTotal(){
     var output = document.getElementById('totalOutput');
-    output.innerHTML = this.cartItemService.calculatePriceSum();
+    setInterval(()=>{
+    output.innerHTML = this.cartItemService.calculatePriceSum(),1500
+  });
     }
 }

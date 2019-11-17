@@ -1,0 +1,55 @@
+<!-- Sidenav -->
+<mat-sidenav mode="over" opened="false" #sidenav class="sidenav">
+
+    <button type="button" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>keyboard_backspace</mat-icon>
+    </button>
+
+<img [src]="tenderImage">
+
+<div class="menu-link">
+  <button mat-button routerLink="/home" (click)="sidenav.close()">
+    <mat-icon class="home">home</mat-icon>
+    <span>Home</span>
+  </button>
+
+  <button mat-button routerLink="/about" (click)="sidenav.close()">
+    <mat-icon class="about">pageview</mat-icon>
+    <span>About</span>
+  </button>
+
+  <button mat-button routerLink="/contact" (click)="sidenav.close()">
+    <mat-icon class="contact">email</mat-icon>
+    <span>Contact</span>
+  </button>
+
+  <button mat-button routerLink="/misc" (click)="sidenav.close()">
+    <mat-icon class="misc">burst_mode</mat-icon>
+    <span>Misc</span>
+  </button>
+</div>
+
+</mat-sidenav>
+
+<!-- Header -->
+<mat-toolbar color="primary">
+
+<!-- Sidenav activate -->
+<div class="sidenav-content">
+    <button type="button" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+<span><a href="/">
+  <img [src]="tenderImage"/>
+</a></span>
+
+
+
+<!-- Menu -->
+<span class="spacer"></span>
+<button type="button" mat-icon-button routerLink="/cart">
+  <mat-icon>shopping_cart</mat-icon>
+</button>
+</mat-toolbar>

@@ -34,4 +34,9 @@ export class CartItemComponent  {
     console.log("amount + function called");
     this.cartItemService.incrementAmountOfCartItem(position);
     }
+
+    public decrementAmount(position: number){
+    console.log("amount - function called");
+    this.cartItemService.decrementAmountOfCartItem(position);
+    }
 }

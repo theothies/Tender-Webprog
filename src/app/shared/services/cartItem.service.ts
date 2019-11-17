@@ -14,15 +14,18 @@ export class CartItemService {
 
     }
 
+    //Liefert das cartItem array
     findAll(): CartItem[] {
         return this.cartItems;
     }
 
+    //Fügt ein cartItem dem Warenkorb hinzu
     addToCart(cow: Cow, gewicht: number, fleshPiece: string, price: number, amount: number){
         this.cartItems.push(new CartItem(this.idCounter, cow.name, cow.hof, gewicht, cow.sex, price, amount, fleshPiece))
         this.idCounter+=1;
     }
 
+    //Methode, um die Anzahl eines einzelnen cartItems zu erhöhen
     incrementAmountOfCartItem(position: number){
         this.cartItems.forEach(cartItem => {
             if(cartItem.id == position){
@@ -31,6 +34,7 @@ export class CartItemService {
         })
     }
 
+    //Methode, um die Anzahl eines einzelnen cartItems zu verringern
     decrementAmountOfCartItem(position: number){
         this.cartItems.forEach(cartItem => {
             if(cartItem.id == position){
@@ -41,6 +45,7 @@ export class CartItemService {
         })
     }
 
+    //Methode, um ein cartItem aus dem Warenkorb zu entfernen
     deleteFromCart(position: number){
         this.cartItems.forEach(cartItem => {
             if(cartItem.id == position){
@@ -57,6 +62,7 @@ export class CartItemService {
         console.log(this.cartItems);
     }
 
+    //Methode, um die Gesamtsumme zu berechnen
     calculatePriceSum(): String{
         var total = 0;
         this.cartItems.forEach(cartItem => {
@@ -67,6 +73,8 @@ export class CartItemService {
 
     }
 
+    //Methode, um den index eines bestimmten cartItems in der cartItemList
+    //zu erhalten
     getSelectedIndex(CartSingleItem: CartItem): number{
         var i = 0;
 

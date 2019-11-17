@@ -28,6 +28,7 @@
                 }
               ],
               "styles": [
+                "src/assets/themes/tender-theme.scss",
                 "src/styles.scss"
               ],
               "scripts": []

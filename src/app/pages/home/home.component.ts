@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import { Cow, Carousel, CowService } from '@shared';
+import { Cow, Carousel } from '../../shared/models';
+import {CowService } from '../../shared/services';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -8,23 +9,25 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent {
+export class HomeComponent{
   cowList: Cow[];
   carouselList: Carousel[] = [];
   serviceSub: any;
 
   constructor(private readonly cowservice: CowService){}
-
-  getCows(): Cow[]{
-    return this.cowList;
-  }
-
+  
   ngOnInit(){
     this.serviceSub = this.cowservice.getAllCows().subscribe(cows => {
       this.cowList = cows;
       this.generateCarouselFromCows();
     });
   }
+
+  getCows(): Cow[]{
+    return this.cowList;
+  }
+
+  
 
   generateCarouselFromCows() {
     this.cowList.forEach(cow => {

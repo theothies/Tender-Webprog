@@ -42,9 +42,9 @@
             <p>
                 Welches Geschlecht hat das Rind?
                 <br />
-                <mat-radio-group class="full-width" id="sex" name="sex" ngModel required>
-                    <mat-radio-button value="M">Männlich</mat-radio-button>
-                    <mat-radio-button value="W">Weiblich</mat-radio-button>
+                <mat-radio-group class="full-width" id="sex" name="sex" cellspacing="12db" ngModel required>
+                    <mat-radio-button class="radiob" value="M">Männlich</mat-radio-button>
+                    <mat-radio-button class="radiob" value="W">Weiblich</mat-radio-button>
                 </mat-radio-group>
             </p>
             <button mat-raised-button type="submit" [disabled]="c.invalid">Submit</button>

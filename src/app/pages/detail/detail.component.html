@@ -1,0 +1,26 @@
+<!-- hier kommt diese Detailseite rein -->
+<mat-card gdAreas="image stats | content content" fxLayoutAlign="space-evenly" fullscreen>
+    <div class="image" gdArea="image">
+        <img src="{{cow.imageUrl}}" alt="Bild von {{cow.name}}"/>
+    </div>
+    <div gdArea="stats">
+        <h5>{{cow.name}}, {{cow.age}} Jahre alt</h5>
+        <h5>{{cow.race}} bei {{cow.hof}}.</h5>
+        <h5>Verfügbar bis: {{cow.date}}</h5>
+        <h5>Gewicht verfügbar: {{cow.weight}} kg</h5>
+        <h5>Geschlecht: {{cow.sex}}</h5>
+        <h5>Diät: {{cow.diet}}</h5>
+    </div>
+    <div gdArea="content">
+        <form class="form" (ngSubmit)="onSubmit(c)" #c="ngForm">
+            <table class="full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="full-width">
+                <input matInput placeholder="Gewicht des Stückes" id="gewicht" name="gewicht" ngModel required>
+              </mat-form-field></td>
+              <td><mat-form-field class="full-width">
+                <input matInput placeholder="Menge" id="amount" name="amount" ngModel required>
+              </mat-form-field></td></tr></table>
+              <button mat-raised-button type="submit" [disabled]="c.invalid">Zum Warenkorb hinzufügen</button>
+          </form>
+    </div>
+</mat-card>

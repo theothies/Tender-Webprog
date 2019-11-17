@@ -24,4 +24,9 @@ export class CartItemComponent  {
     }
 
     @Input() public cartItemList: CartItem[];
+
+    public deleteItem(position: number){
+    console.log("function called");
+    this.cartItemService.deleteFromCart(position);
+    }
 }

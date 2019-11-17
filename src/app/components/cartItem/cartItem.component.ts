@@ -39,4 +39,9 @@ export class CartItemComponent  {
     console.log("amount - function called");
     this.cartItemService.decrementAmountOfCartItem(position);
     }
+
+    public getTotal(){
+    var output = document.getElementById('totalOutput');
+    output.innerHTML = this.cartItemService.calculatePriceSum();
+    }
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {NgForm} from 'angular/forms';
+import {NgForm} from '@angular/forms';
+
+import { CowService, Cow} from '@shared/services/cow.service';
 
 @Component({
     selector: 'app-cowAdd',
@@ -9,6 +11,8 @@ import {NgForm} from 'angular/forms';
 
 export class CowAddComponent {
     
+    constructor(private cowService: CowService) {}
+
     public onSubmit(form: NgForm) {
         const age = form.value.age;
         const diet = form.value.diet;
@@ -20,5 +24,6 @@ export class CowAddComponent {
         const quality = form.value.quality;
         const race = form.value.race;
         const imageUrl = form.value.imageUrl
+
     }
 }

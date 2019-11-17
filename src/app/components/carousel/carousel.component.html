@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="carousel">
+        <ul class="slides">
+            <li *ngFor="let carousel of carouselList">
+                <a routerLink="{{carousel.link}}">
+                    <mat-card gdAreas="img | name | stats">
+                        <div gdArea="img">
+                            <img src="{{carousel.imageUrl}}" alt="{{carousel.alt}}" >
+                        </div>
+                        <div gdArea="name">
+                            <h2>{{carousel.text}}, {{carousel.age}}</h2>
+                            <h3>{{carousel.race}}, des Hofes: {{carousel.hof}}</h3>
+                        </div>
+                    </mat-card>
+                </a>    
+            </li>
+        </ul>
+    </div>
+</div>

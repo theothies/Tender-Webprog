@@ -32,7 +32,7 @@ export class CartItemComponent  {
     this.cartItemService.deleteFromCart(position);
     }
 
-    //Methode, um die Anzahk zu erhöhen
+    //Methode, um die Anzahl zu erhöhen
     public incrementAmount(position: number){
     console.log("amount + function called");
     this.cartItemService.incrementAmountOfCartItem(position);

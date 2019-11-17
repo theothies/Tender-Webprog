@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Cow } from '../models';
+import 'rxjs/add/operator/map';
 
 @Injectable({
     providedIn: 'root'
@@ -31,6 +32,18 @@ export class CowService {
     public generateLink(id: string): string{
         return '/detail/$(id)';
     }
+
+    public   getCow(id: string): Observable<Cow> {
+        const cowDocuments = this.db.doc<Cow>('cows/' + id);
+        console.log(cowDocuments);
+        this.cow = cowDocuments.snapshotChanges().map(actions => {
+            const data = actions.payload.data() as Cow;
+            const id = actions.payload.id;
+            return { id, ...data};
+          });
+        console.log(this.cow);
+        return this.cow;
+      }
 
     cowFormSend(age, diet, sex, date, weight, hof, name, quality, race, imageUrl : any): void {
         this.db.collection("cows").add({

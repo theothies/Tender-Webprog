@@ -1,13 +1,13 @@
 import { Component, OnInit , OnDestroy} from '@angular/core';
 import { CartItem, Cow } from '../../shared/models';
-import { CartItemService } from '../../shared/services'
-import { CartItemComponent } from 'src/app/components/misc/cartItem/cartItem.component';
+import { CartItemService } from '../../shared/services';
+import { CartItemComponent } from '../../components/cartItem/cartItem.component';
 
 
 @Component({
   selector: 'app-cartpage',
   templateUrl: './cart-page.component.html',
-  styleUrls: ['./cart-page.component.css']
+  styleUrls: ['./cart-page.component.scss']
 })
 export class CartComponent{
   cartItemList: CartItem[] = [];

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms';
 
-import { CowService, Cow} from '@shared/services/cow.service';
+import { CowService, Cow} from '@shared';
 
 @Component({
     selector: 'app-cowAdd',
     templateUrl: './cowAdd.component.html',
-    styleUrls: ['./cowAdd.component.css']
+    styleUrls: ['./cowAdd.component.scss']
 })
 
 export class CowAddComponent {

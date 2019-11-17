@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Injector } from '@angular/core';
-import { CartItem } from '../../../shared/models';
-import { CartItemService } from '../../../shared/services';
+import { CartItem } from '../../shared/models';
+import { CartItemService } from '../../shared/services';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({

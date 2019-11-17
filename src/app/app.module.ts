@@ -17,6 +17,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   FooterComponent,
   HeaderComponent,
+  CowService,
   CartItemService
 } from '@shared';
 

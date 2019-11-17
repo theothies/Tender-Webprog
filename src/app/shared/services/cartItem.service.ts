@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { CartItem, Cow } from '../models';
 
 @Injectable()

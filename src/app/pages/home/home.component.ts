@@ -33,6 +33,7 @@ export class HomeComponent{
     this.cowList.forEach(cow => {
       this.carouselList.push(new Carousel(cow.imageUrl, cow.name,cow.age, cow.race, cow.hof, 'Bild von ' + cow.name, this.generateDetailLink(cow.id), false));
     })
+    
   }
 
   generateDetailLink(id:string): string{

@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms';
 
-<<<<<<< HEAD
 import { CowService, Cow} from '@shared';
-=======
-import { CowService } from '@shared/services/cow.service';
->>>>>>> f358161b600d15761756697b120c398cc0709932
 
 @Component({
     selector: 'app-cowAdd',

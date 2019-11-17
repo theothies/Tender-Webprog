@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import { Cow, Carousel } from '../../shared/models';
-import { CowService } from '../../shared/services';
+import { Cow, Carousel, CowService } from '@shared';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -15,10 +14,6 @@ export class HomeComponent {
   serviceSub: any;
 
   constructor(private readonly cowservice: CowService){}
-
-  public onToTop(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
 
   getCows(): Cow[]{
     return this.cowList;

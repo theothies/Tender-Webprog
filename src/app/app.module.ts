@@ -35,10 +35,14 @@ import { CartComponent } from './pages/cart-page/cart-page.component';
 
 // Components
 import { AppRoutingModule } from './app.routing';
+import {CarouselComponent } from './components/carousel/carousel.component';
+import { CartItemComponent } from './components/cartItem/cartItem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CarouselComponent,
+    CartItemComponent,
     HomeComponent,
     AboutMeComponent,
     CowAddComponent,

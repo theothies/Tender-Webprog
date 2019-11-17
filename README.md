@@ -12,10 +12,14 @@ Enthalten sind:
 * [Firebase](https://firebase.google.com/).  
 See also: [AngularMaterialGo](https://github.com/jeroenouw/AngularMaterialGo
 
-## Quick start, Development & Production
-
-  Hier ein Quick Guide, um das Repo zum laufen zu bringen.  
-  [Get started now](https://github.com/Enes2802/Tender-Angular-Firebase/blob/master/docs/DEVELOPER.md)  
+## Quick Start
+```
+First clone this repo: git clone https://github.com/theothies/Tender-Webprog. For Windows machines first install node-gyp Change directory to this project
+Run npm install to install all the dependencies.
+Run npm start to run this project. This will run with the AoT Compiler.
+Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run npm reset if you want to re-install everything.
+```
 
 ## Developer
 * [robhringer](https://github.com/robhringer) - Robin Böhringer

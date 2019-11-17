@@ -2,8 +2,8 @@
 
 ## Quick start
 
-First clone this repo: `git clone https://github.com/Enes2802/Tender-Angular-Firebase.git`.
-For Windows machines first install [node-gyp](https://github.com/nodejs/node-gyp)
+First clone this repo: `git clone https://github.com/theothies/Tender-Webprog`.
+First install [node-gyp](https://github.com/nodejs/node-gyp)
 Change directory to this project  
 Run `npm install` to install all the dependencies.  
 Run `npm start` to run this project. This will run with the AoT Compiler.  

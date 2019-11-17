@@ -1,0 +1,67 @@
+.wrapper {
+    width: 100%;
+    margin: 0px auto 10px;
+}
+
+.carousel {
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+
+.slides {
+    list-style:none;
+    position:relative;
+    width:200%; /* Each slide is 100% */
+    overflow:hidden;
+    -moz-animation:carousel 15s infinite;
+    -webkit-animation:carousel 15s infinite;
+    animation:carousel 15s infinite;
+    padding: inherit;
+}
+
+.slides > li {
+    position:relative;
+    float:left;
+    width: 50%; /* Total of slides should be 100% */
+}
+
+.mat-card > img {
+    display:block;
+    width:50%;
+    height: 50%;
+}
+
+.mat-card > h2 {
+    margin-bottom: 0;   
+    font-size:3em;
+    padding:1.5em 0.5em 1.5em 0.5em;;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    text-decoration: none;
+    text-align:left;
+    color: black;
+}
+
+.mat-card > h3{
+    margin-bottom: 0;
+    font-size:2em;
+    padding:1.5em 0.5em 1.5em 0.5em;;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    text-decoration: none;
+    text-align:left;
+    color: black;
+}
+
+@keyframes carousel {
+    0%    { left:0%; }
+    20%   { left:0%; }
+    40%   { left:-100%; }
+    60% { left:-100%}
+    80%   { left:0%; }
+
+}
+ 

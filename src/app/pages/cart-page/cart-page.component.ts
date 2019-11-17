@@ -16,10 +16,13 @@ export class CartComponent{
 
   constructor(private readonly cartItemService: CartItemService) { }
 
+  //Methode, um die cartItems zu erhalten
   getItems(): CartItem[]{
     return this.cartItemList;
   }
 
+  //Hier wird die cartItemList aus dem cartItemService immer wieder geupdated,
+  //um genau zu sein alle 1500ms.
   ngOnInit(){
     this.service = this.cartItemService.findAll();
     this.cartItemService.findAll().forEach(cartItem=>{

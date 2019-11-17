@@ -32,4 +32,25 @@ export class CowService {
         return '/detail/$(id)';
     }
 
+    cowFormSend(age, diet, sex, date, weight, hof, name, quality, race, imageUrl : any): void {
+        this.db.collection("cows").add({
+            age: age,
+            diet: diet,
+            sex: sex,
+            date: date,
+            weight: weight,
+            hof: hof,
+            name: name,
+            quality: quality,
+            race: race,
+            imageUrl: imageUrl
+        })    
+        .then(function(Cow){
+            console.log("Cow added with ID: ", Cow.id)
+        })
+        .catch(function(error){
+            console.error("Error adding cow ", error)
+        })
+    }
+
 }    

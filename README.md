@@ -21,8 +21,13 @@ Navigate to http://localhost:4200/. The app will automatically reload if you cha
 Run npm reset if you want to re-install everything.
 
 ## Funktionen der Website
-Man kann über die ```/home``` alle verfügbaren Rinder anschauen. Klickt man auf eines der Rinder so gelangt man auf die ```/detail/id``` Ansicht auf der man eine Beschreibung des Rindes vorfindet und dort sich ein bestimmtes Teil bestellen kann. Man gibt dazu das Gewicht in g(Bsp: 500) an und die Menge(Bsp: 2) und man sucht einen Radio Button raus, welches Stück Fleisch man bestellen möchte. Sobald man auf dem Knopf ```Zum Warenkorb hinzufügen``` klickt, landet die Bestellung in dem Warenkorb.  
-Zum Warenkorb ```/cart``` gelangt man über das Warenkorb-Symbol in der oberen rechten Ecke der Seite. Hier werden alle Bestellungen die man in den Warenkorb schiebt gespeichert und können entweder gelöscht werden, oder die Menge kann noch verändert werden.  
+### /home
+Man kann über die ```/home``` alle verfügbaren Rinder anschauen.
+### /detail/id
+Klickt man auf eines der Rinder so gelangt man auf die ```/detail/id``` Ansicht auf der man eine Beschreibung des Rindes vorfindet und dort sich ein bestimmtes Teil bestellen kann. Man gibt dazu das Gewicht in g(Bsp: 500) an und die Menge(Bsp: 2) und man sucht einen Radio Button raus, welches Stück Fleisch man bestellen möchte. Sobald man auf dem Knopf ```Zum Warenkorb hinzufügen``` klickt, landet die Bestellung in dem Warenkorb.  
+### /cart
+Zum Warenkorb ```/cart``` gelangt man über das Warenkorb-Symbol in der oberen rechten Ecke der Seite. Hier werden alle Bestellungen die man in den Warenkorb schiebt gespeichert und können entweder gelöscht werden, oder die Menge kann noch verändert werden. 
+### /cowAdd
 Hat man seinen eigenen Hof und möchte über die Web App sein eigenes Rind verkaufen, so kann man es über das Menü in der linken oberen Ecke der Seite auf ```Kuh hinzufügen``` klicken und gelangt dadurch auf die ```/cowAdd``` Seite.  
 Auf dieser Seite kann man die Daten zu dem Rind das man hinzufügen möchte eingeben und man kann den Link zu einem Bild angeben (Bsp: https://ais.badische-zeitung.de/piece/0a/5d/e1/0a/173924618-h-720.jpg ). Klickt man auf den Knopf ```Hinzufügen``` kann man auf der Home Seite auch sein eigenes erstelltes Rind betrachten.
 

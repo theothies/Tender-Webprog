@@ -1,6 +1,6 @@
 .form {
-    width: 300px;
-    margin: 0 auto;
+    width: 500px;
+    margin: auto;
   }
   
   .full-width {
@@ -29,4 +29,25 @@
   p {
     padding-bottom: 0.5em;
     color: gray;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .form {
+      width: 200px;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .form {
+      width: 350px;
+      margin: auto;
+    }
+  }  
+
+  @media only screen and (min-width: 900px) {
+   .form {
+      width: 700px;
+      margin: auto;
+    }
   }

@@ -33,10 +33,10 @@ Auf dieser Seite kann man die Daten zu dem Rind das man hinzufügen möchte eing
 
 ## Projektplan und Vorgehensweise
 Folgende Ansichten sind Teil der Aufgabe:  
-* Die Seite /addCow, auf der es möglich ist eigene Rinder auf die Seite hochzuladen - Umgesetzt durch [theothies](https://github.com/theothies)
-* Detail-/Einzelansicht von einem Rind, auf der man das für sich passende Stück Fleisch bestellen kann - Umgesetzt durch [Enes2802](https://github.com/Enes2802)
-* Warenkorb mit Inhalten, die man verändern und löschen kann   - Umgesetzt durch [robhringer](https://github.com/robhringer)
-* Die Home/Gesamtübersichtseite, sowie alle dazugehörigen CSS und JavaScript Dateien, wurden in Gruppenarbeit zusammen gelöst.
+* Die Seite ´´´/addCow´´´, auf der es möglich ist eigene Rinder auf die Seite hochzuladen - Umgesetzt durch [theothies](https://github.com/theothies)
+* Seite ´´´ /detail/id´´´ Detail-/Einzelansicht von einem Rind, auf der man das für sich passende Stück Fleisch bestellen kann - Umgesetzt durch [Enes2802](https://github.com/Enes2802)
+* Warenkorbseite ´´´/cart´´´ mit Inhalten, die man verändern und löschen kann   - Umgesetzt durch [robhringer](https://github.com/robhringer)
+* Die Home/Gesamtübersichtseite ´´´/home´´´, sowie alle dazugehörigen CSS und JavaScript Dateien, wurden in Gruppenarbeit zusammen gelöst.
 
 ### Warum diese Aufteilung?
 Jeder muss alle drei Bereiche CSS, HTML und JavaScript abdecken, weshalb jeder für eine Sicht verantwortlich ist, damit jeder alle Bereiche für die volle Punktzahl abdecken kann.

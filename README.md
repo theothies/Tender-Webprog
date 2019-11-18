@@ -10,14 +10,18 @@ Enthalten sind:
 * [Angular 8](https://angular.io),
 * [Material](https://material.io/) and
 * [Firebase](https://firebase.google.com/).  
-See also: [AngularMaterialGo](https://github.com/jeroenouw/AngularMaterialGo
+See also: [AngularMaterialGo](https://github.com/jeroenouw/AngularMaterialGo die genutzte Boilerplate für unsere Seite.
 
 ## Quick Start
-First clone this repo: git clone https://github.com/theothies/Tender-Webprog. For Windows machines first install node-gyp Change directory to this project
-Run npm install to install all the dependencies.
-Run npm start to run this project. This will run with the AoT Compiler.
+First clone this repo: git clone https://github.com/theothies/Tender-Webprog. 
+For Windows machines first install node-gyp Change directory to this project
+Run ``` npm install ``` to install all the dependencies.
+Run ``` npm start ``` to run this project. This will run with the AoT Compiler.
 Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 Run npm reset if you want to re-install everything.
+
+## Funktionen der Website
+
 
 ## Developer
 * [robhringer](https://github.com/robhringer) - Robin Böhringer
